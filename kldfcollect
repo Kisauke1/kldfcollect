@@ -1,0 +1,8 @@
+for i,v in pairs(game:GetService("Workspace"):GetChildren()) do
+    print(v.Name)
+    if v.ClassName == "Tool" then
+        firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Handle, 0) --0 is touch
+        wait()
+        firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Handle, 1) -- 1 is untouch
+    end
+end
